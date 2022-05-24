@@ -43,6 +43,8 @@ You will be adding validation to an application that stores one resource, books.
 - [VSCode](https://code.visualstudio.com/docs)
 
 ## **How to Run**
+This is the Express backend for the app.
+To run this:
 
 ```bash
 # Clone Repository
@@ -50,6 +52,11 @@ $ git clone https://github.com/cng008/36.2_express-bookstore.git
 $ npm install
 $ createdb books
 $ psql < data.sql
-$ nodemon server.js
-open http://localhost:3000/ in API viewer
+$ node server.js
+open http://localhost:3000/ in API viewer such as Insomnia or Postman
 ```
+
+Tests are run using Jest and Supertest. Make sure Jest is installed globally.
+To run the tests:
+
+    jest -i
